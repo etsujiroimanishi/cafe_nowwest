@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/****** HOME *****/
+.header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: #90EE90;
+  top: 0vh;
+  left: 0vw;
+  z-index: 10;
+
+  @media (max-width:800px) {
+    // display: none;
+    visibility: hidden;
+  }
+
+  .headerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    padding: 3vh;
+    font-weight: bold;
+  }
+}
+
+.homeWrap {
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  @media (max-width:800px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 120vh;
+  }
+
+  .homeText {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width:800px) {
+      width: 100%;
+    }
+
+    & h1 {
+      margin-top: 24vh;
+      font-size: 2em;
+      text-align: center;
+
+      @media (max-width:800px) {
+        margin-top: 14vh;
+
+      }
+    }
+
+    & h2 {
+      margin-top: 3vh;
+      font-size: 1em;
+    }
+
+    & h3 {
+      margin-top: 6vh;
+      width: 100px;
+      height: 100px;
+    }
+
+    & p {
+      margin-top: 6vh;
+      text-align: center;
+      width: 50vw;
+      height: 10px;
+
+      @media (max-width:800px) {
+        width: 70vw;
+      }
+    }
+  }
+
+
+  .georgeCircle {
+    width: 60%;
+    height: auto;
+    margin-top: 150px;
+
+    @media (max-width:800px) {
+      width: 60%;
+      height: 60%;
+      margin-top: 20px;
+    }
+
+    .circle_contents {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      // height: 100%;
+
+      .georgeFace {
+
+        @media (max-width:800px) {
+          margin: 50px auto;
+        }
+
+        & img {
+          width: 50%;
+          height: 50%;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      
+      .banana_contents {
+
+        & img {
+          width: 90%;
+          height: 90%;
+          position: absolute;
+          top: -7%;
+          left: 5%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.banana_circle {
+   animation: rotate 20s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.banana_circle_reverse {
+  animation: rotate2 20s infinite linear;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/****** HOME end *****/

@@ -1,0 +1,72 @@
+/****** MENU *****/
+.menuWrap {
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    gap: 10%;
+    @media (width < 800px) {
+      height: 130vh;
+      margin: 0 auto;
+    }    
+  }
+  
+  .menuGeorge{
+    width: 15%;
+    height: auto;
+    @media (width < 800px) {
+      visibility: hidden;
+      display: none;
+    }    
+  }
+  
+  .menuGeorgeAnime {
+    animation-name: kinoboriUpdown1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+      
+    & p {
+      width: 200px;
+      height: 200px;
+    } 
+  }
+  
+  @keyframes kinoboriUpdown1 {
+    0% {
+      transform: translate(4vw,12vh);  }
+  
+    50% {
+      transform: translate(4vw,80vh);  }
+  
+    100% {
+      transform: translate(4vw,12vh);  }
+  
+  }
+  
+  .menuContents{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+
+    @media (width < 800px) {
+      width: 100%;
+    }    
+
+  }
+  
+  .menuContents h1 {
+    margin: 15vh auto 4vh; 
+    font-size: 3em;
+    font-weight: bold;
+    color: #90EE90;
+    @media (width < 800px) {
+      margin: 0 auto;
+    }    
+  
+  }
+  
+  /****** MENU end *****/

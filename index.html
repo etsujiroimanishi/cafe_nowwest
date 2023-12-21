@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style_drawer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- ********  Drawer *****  -->
+        <input id="open" type="checkbox">
+        <label class="toggle" for="open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div id="drawerMenu">
+            <nav>
+                <ul>
+                    <li><a href="#HOME"><br><br> HOME <br><br></a></li>
+                    <li><a href="#FLOOR">FLOOR <br><br></a></li>
+                    <li><a href="#MENU">MENU <br><br></a></li>
+                    <li><a href="#ACCESS">ACCESS <br><br></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ********  Drawer end *****  -->
+
+
+        <!-- ******** HOME ******** -->
+
+        <div class="header">
+            <ul class="headerText">
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#FLOOR">FLOOR</a></li>
+                <li><a href="#MENU">MENU</a></li>
+                <li><a href="#ACCESS">ACCESS</a></li>
+            </ul>
+        </div>
+
+        <div id="HOME">
+            <div class="homeWrap">
+                <section class="homeText">
+                    <h1>Cafe Campanella</h1>
+                    <h2>カフェ・カムパネルラ</h2>
+                    <h3 class="HOME_target animate__animated"><img src="img/Logo.svg" alt="logo"></h3>
+                    <p>おさるのジョータと触れ合える<br>バナナ好きのカフェ</p>
+                    <p>ジョータと一緒に採りたてのバナナが味える</p>
+                </section>
+                <div class="georgeCircle">
+                    <div class="circle_contents">
+                        <div class="georgeFace">
+                            <img src="img/geortaFace.png" alt="george">
+                        </div>
+                        <div class="banana_contents">
+                            <img id="HOME_circle" class="banana_circle" src="img/banana_circle.png" alt="banana">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******** HOME  end  ******** -->
+
+
+        <!-- ******** FLOOR ******** -->
+
+        <div id="FLOOR">
+            <div id="floorWrap">
+                <div class="ab00">
+                    <p>バナナは店内に陳列されており、<br>店長が店内を動き回って
+                        <br>楽しい雰囲気を提供しています。</p>
+                </div>
+                <div class="ab01">
+                    <img src="img/ComeG.png" alt="george">
+                </div>
+
+
+                <div class="floorPhoto">
+                    <div class="ab02">
+                        <img src="img/bananaTree_thrue2.png" alt="george">
+                    </div>
+                    <div class="ab03 animate__animated">
+                        <img src="img/floorPhoto.jpg" alt="george">
+                    </div>
+                </div>
+                <div class="ag00">
+                    <p>
+                        <img src="img/georta.png" alt="george">
+                    </p>
+                </div>
+                <div class="ag01">
+                    <p>
+                        <img src="img/georta.png" alt="george">
+                    </p>
+                </div>
+
+                <div class="ag02">
+                    <p>
+                        <img src="img/geortaCircle.png" alt="george">
+                    </p>
+                </div>
+                <div class="ag04">
+                    <p>
+                        <img src="img/geortaWithBanana.png" alt="george">
+                    </p>
+                </div>
+                <div class="ag05">
+                    <p>
+                        <img src="img/geortaFaceWithBanana.png" alt="george">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******** FLOOR end ******** -->
+
+        <!-- ******** MENU ******** -->
+        <div id="MENU">
+            <div class="menuWrap">
+
+                <div class="menuGeorge">
+                    <div class="menuGeorgeAnime">
+                        <p>
+                            <img src="img/georta.png" alt="george">
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="menuContents">
+
+                    <h1>Menu</h1>
+
+                    <div class="micromodal-slide" id="modal-3" aria-hidden="true">
+                        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+                            <div class="modal-container" role="dialog" aria-modal="true">
+                                <!-- 閉じるボタン -->
+                                <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+                                <!-- モーダルの中身 -->
+                                <img src="img/menu01.png" alt="menu">
+                                <p><br><br>
+                                    採れたてのバナナだよ。
+                                </p>
+                            </div><!-- modal-container -->
+                        </div><!-- micromodal-overlay -->
+                    </div><!-- .micromodal-slide #modal-3 -->
+
+                    <div class="micromodal-slide" id="modal-4" aria-hidden="true">
+                        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+                            <div class="modal-container" role="dialog" aria-modal="true">
+                                <!-- 閉じるボタン -->
+                                <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+                                <!-- モーダルの中身 -->
+                                <img src="img/menu02.png" alt="menu">
+                                <p><br><br>
+                                    バナナケーキだよ。
+                                </p>
+                            </div><!-- modal-container -->
+                        </div><!-- micromodal-overlay -->
+                    </div><!-- .micromodal-slide #modal-3 -->
+
+                    <div class="micromodal-slide" id="modal-5" aria-hidden="true">
+                        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+                            <div class="modal-container" role="dialog" aria-modal="true">
+                                <!-- 閉じるボタン -->
+                                <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+                                <!-- モーダルの中身 -->
+                                <img src="img/menu03.png" alt="menu">
+                                <p><br><br>
+                                    バナナケーキだよ。
+                                </p>
+                            </div><!-- modal-container -->
+                        </div><!-- micromodal-overlay -->
+                    </div><!-- .micromodal-slide #modal-3 -->
+
+                    <div class="micromodal-slide" id="modal-6" aria-hidden="true">
+                        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+                            <div class="modal-container" role="dialog" aria-modal="true">
+                                <!-- 閉じるボタン -->
+                                <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+                                <!-- モーダルの中身 -->
+                                <img src="img/geortaFaceWithBanana.png" alt="george">
+                                <p><br><br>
+                                    おいしいよ。
+                                </p>
+                            </div><!-- modal-container -->
+                        </div><!-- micromodal-overlay -->
+                    </div><!-- .micromodal-slide #modal-3 -->
+
+
+                    <!--*********************************** 各モーダルのボタン ***********************************-->
+
+
+                    <h2 class="modal-gallery-title">  </h2>
+                    <div class="modal__button__container">
+                        <div class="modal__button__container_1">
+                            <div class="modal-gallery-box">
+                                <img src="img/menu01.png" alt="#" data-micromodal-trigger="modal-3">
+                                <p><br>バナナの盛り付け　200円</p>
+                            </div>
+
+                            <div class="modal-gallery-box">
+                                <img src="img/menu02.png" alt="#" data-micromodal-trigger="modal-4">
+                                <p><br>バナナケーキ　500円 </p>
+                            </div>
+                        </div>
+                        <div class="modal__button__container_1">
+                            <div class="modal-gallery-box">
+                                <img src="img/menu03.png" alt="#" data-micromodal-trigger="modal-5">
+                                <p><br>ケーキ　1000円 </p>
+                            </div>
+
+                            <div class="modal-gallery-box">
+                                <img src="img/menu04.png" alt="#" data-micromodal-trigger="modal-6">
+                                <p><br>チョコバナナ 500円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- menuContents 終了 -->
+
+
+
+            </div><!-- menuWrap 終了 -->
+        </div><!-- MENU 終了 -->
+
+        <!-- ******** MENU ******** -->
+
+        <!-- ******** ACCESS ******** -->
+
+        <div id="ACCESS">
+            <div class="accessWrap">
+
+                <div class="accessText">
+
+                    <h1>Access</h1>
+
+
+                    <div class="googlemap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.380831593714!2d135.1898369105598!3d34.695573272808566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ee41335a4b9%3A0x4f54c5c09becedca!2z5YyX6YeO5Z2CIOWlpQ!5e0!3m2!1sja!2sjp!4v1698284200783!5m2!1sja!2sjp"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="accessInfo">
+                        <p>「Cafe Campanella」(カフェ・カムパネルラ)<br>
+                             〒650-0002 兵庫県神戸市中央区北野町1丁目1−3<br>
+                             11:00 - 20:00 不定休
+                        </p>
+                    </div>
+                    <div class="accessNews">
+                        <h2>News</h2>
+                        <h3 class="accessLine">  </h3>
+                        <ul class="accessUl">
+                            <li>2023.11.17 お店の最新情報を提供します。</li>
+                            <li>2023.11.17 お店の最新情報を提供します。</li>
+                            <li>2023.11.17 お店の最新情報を提供します。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accessGeorge">
+                    <div class="accessGeorgeAnime">
+                        <p>
+                            <img src="img/georta.png" alt="george">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******** ACCESS end ******** -->
+
+    </main>
+
+    <footer class="footerWrap">
+        <ul class="footerText">
+            <li class="footerLogo"><img src="img/Logo.svg" alt="logo"></li>
+            <li>
+                <p>@etsujiro.imanishi</p>
+            </li>
+            <li class="footerLogo2"><a href="#"><img src="img/Vector.png" alt="logo"></a></li>
+            <li class="footerLogo2"><a href="#"><img src="img/ion_logo-tiktok.png" alt="logo"></a></li>
+        </ul>
+    </footer>
+    <script src="js/common_home.js"></script>
+    <script src="js/common_home_anime.js"></script>
+    <script src="js/common_floor_anime.js"></script>
+    <script src="js/common_floor.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/micromodal_control.js"></script>
+
+
+</body>
+
+</html>
